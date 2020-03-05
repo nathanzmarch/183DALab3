@@ -5,10 +5,11 @@ from math import sqrt
 
 class Node(object):
     """Node in a tree"""
-    def __init__(self, point, parent):
+    def __init__(self, point, parent,command=-1):
         super(Node, self).__init__()
         self.point = point
         self.parent = parent
+        self.command = command
 
 
 def dist(p1,p2):
